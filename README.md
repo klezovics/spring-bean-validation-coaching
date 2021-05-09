@@ -27,6 +27,8 @@ Base cases:
 
 == Note == 
 
+How to create a custom annotation: https://www.baeldung.com/java-custom-annotation
+
 = Controller = 
 1. @Valid 
 2. Add constraints
