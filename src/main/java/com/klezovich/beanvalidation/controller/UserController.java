@@ -16,6 +16,7 @@ import java.util.Map;
 public class UserController {
 
     @PostMapping("/users")
+    //1 - Add @Valid annotation
     ResponseEntity<String> addUser(@Valid @RequestBody UserDto user) {
         //Yeah, we could validate the input here ...
         // but this will require writing custom code

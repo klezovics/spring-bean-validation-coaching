@@ -10,6 +10,7 @@ import javax.validation.constraints.NotBlank;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+//Step 2 - Add contraints on the object
 public class UserDto {
 
     @NotBlank(message = "Name is mandatory")
