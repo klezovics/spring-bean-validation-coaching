@@ -31,7 +31,7 @@ class UserDtoTest {
     @Test
     void testConstraintsOnEmailWorkAsExpected() {
         var violations = validator.validate(UserDto.builder().name("AK").email("").build());
-        //Name is empty
+        //Email is empty
         assertEquals(1, violations.size());
 
         violations = validator.validate(UserDto.builder().name("AK").email("email").build());
