@@ -23,3 +23,18 @@ Base cases:
 7. Let's just validate something programmatically -> same package as above
 
 8. Validate items in a different way depending on create or update (https://reflectoring.io/bean-validation-with-spring-boot/#using-validation-groups-to-validate-objects-differently-for-different-use-cases)
+
+
+== Note == 
+
+= Controller = 
+1. @Valid 
+2. Add constraints
+
+= Service = 
+1. @Validated
+2. @Valid 
+3. Add constraints 
+
+= Repository =
+1. Add constraints
