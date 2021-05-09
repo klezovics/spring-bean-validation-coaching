@@ -28,8 +28,8 @@ class ValidateParametersController {
     return ResponseEntity.ok("valid");
   }
 
-  @ResponseStatus(HttpStatus.BAD_REQUEST)
   @ExceptionHandler(ConstraintViolationException.class)
+  @ResponseStatus(HttpStatus.BAD_REQUEST)
   public Map<String, String> handleValidationExceptions(ConstraintViolationException ex) {
      var errors = new HashMap<String, String>();
      errors.put("error", ex.getMessage());
