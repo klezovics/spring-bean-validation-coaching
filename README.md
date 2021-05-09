@@ -40,3 +40,6 @@ How to create a custom annotation: https://www.baeldung.com/java-custom-annotati
 
 = Repository =
 1. Add constraints
+
+Homework: 
+How to deal with null checks https://www.baeldung.com/spring-null-safety-annotations
