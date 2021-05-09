@@ -1,5 +1,6 @@
 package com.klezovich.beanvalidation;
 
+import com.klezovich.beanvalidation.dto.UserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
@@ -11,7 +12,7 @@ import javax.validation.Valid;
 @Validated
 public class UserProcessor {
 
-    void process(@Valid User user) {
+    void process(@Valid UserDto user) {
       log.info("Processing {}", user);
     }
 }

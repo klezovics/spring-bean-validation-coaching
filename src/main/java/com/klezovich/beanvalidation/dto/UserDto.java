@@ -1,4 +1,4 @@
-package com.klezovich.beanvalidation;
+package com.klezovich.beanvalidation.dto;
 
 import lombok.*;
 
@@ -10,7 +10,7 @@ import javax.validation.constraints.NotBlank;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class UserDto {
 
     @NotBlank(message = "Name is mandatory")
     private String name;

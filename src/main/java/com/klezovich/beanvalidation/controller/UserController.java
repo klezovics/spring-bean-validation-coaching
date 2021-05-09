@@ -1,5 +1,7 @@
-package com.klezovich.beanvalidation;
+package com.klezovich.beanvalidation.controller;
 
+import com.klezovich.beanvalidation.dto.UserDto;
+import com.klezovich.beanvalidation.dto.UserDtoWithAddress;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -14,7 +16,15 @@ import java.util.Map;
 public class UserController {
 
     @PostMapping("/users")
-    ResponseEntity<String> addUser(@Valid @RequestBody User user) {
+    ResponseEntity<String> addUser(@Valid @RequestBody UserDto user) {
+        //Yeah, we could validate the input here ...
+        // but this will require writing custom code
+
+        return ResponseEntity.ok("User is valid");
+    }
+
+    @PostMapping("/users_with_address")
+    ResponseEntity<String> addUser(@Valid @RequestBody UserDtoWithAddress user) {
         // persisting the user
         return ResponseEntity.ok("User is valid");
     }
